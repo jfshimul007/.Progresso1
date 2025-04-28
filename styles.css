@@ -1,0 +1,295 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #26b4d8  !important;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    height: 120px;
+    /* padding: 3px 0px; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Custom styles for .Progresso logo */
+.progresso-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffcc00, #ff3366, #3366ff, #33ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: colorShift 3s infinite alternate;
+}
+
+/* Progresso Logo */
+.navbar-brand h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffcc00, #ff3366, #3366ff, #33ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: colorShift 3s infinite alternate;
+}
+
+
+li:hover {
+    background-color: #1888a8; /* Darker shade when clicked */
+    transform: scale(0.95); /* Slight press effect */
+    /* background-color: #3c78da; Changes only the background color when hovering */
+    /* Removed transform and box-shadow to avoid creating a box effect */
+}
+
+
+.navbar-brand h1:hover {
+    color: #FFD700;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item .nav-link {
+    font-size: 25px;
+    color: rgb(240, 240, 240) !important;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Login Button */
+.navbar-nav .nav-item .btn {
+    background-color: #201E43;
+    border: none;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-item .btn:hover {
+    background-color: #E82561;
+    transform: scale(1.1);
+}
+
+/* Navbar Fade-in Animation */
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    animation: fadeInNav 0.8s ease-out;
+}
+
+/* Responsive Navbar Fix */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* General Styling */
+body {
+    background-color: #f4f7fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.custom-color {
+    color: #26b4d8;
+}
+
+.card-header {
+    background-color: #26b4d8 ;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 25px;
+}
+
+h2 {
+    color: #fafbfe;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-outline-blue {
+    color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-outline-blue:hover {
+    background-color: #4e73df;
+    color: white;
+}
+
+.logout-btn {
+    background-color: rgb(255, 0, 60);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+
+.logout-btn:hover {
+    background-color: #333;
+    color: #ffb400;
+    border: 2px solid #ffb400;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.card a:focus, .card a:hover {
+    text-decoration: none;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #4e73df;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.logout-btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card-body .btn-lg {
+    width: 100%;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    padding: 50px 20px;
+  }
+  
+  #about h3 {
+    color: #26b4d8; /* Matches the custom primary color */
+    font-weight: bold;
+  }
+  
+  #about p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about .btn-primary {
+    background-color: #26b4d8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #about .btn-primary:hover {
+    background-color: #1a92b3; /* Darker blue on hover */
+  }
+
+  .custom-btn {
+    background-color: #26b4d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+
+  .custom-btn:hover {
+    background-color: #1e9ec2; /* Slightly darker shade on hover */
+  }
+
+  .custom-btn:active {
+    background-color: #1888a8; /* Darker shade when clicked */
+    transform: scale(0.95); /* Slight press effect */
+  }
+
+
+  .navbar, .footer {
+    background-color: #26b4d8 !important;
+}
+.btn-primary {
+    background-color: #26b4d8 !important;
+    border-color: #26b4d8 !important;
+}
+.btn-primary:hover {
+    background-color: #1e9ec2 !important;
+    border-color: #1e9ec2 !important;
+}
+
+.text-primary {
+    color: #26b4d8 !important;
+}
+       
